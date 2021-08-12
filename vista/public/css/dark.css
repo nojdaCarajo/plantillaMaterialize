@@ -1,0 +1,52 @@
+.infoDark{
+	background-color: #1e1e1e !important;
+}
+
+
+.menuDark{
+	background: #252525 !important;
+	color: #fff;
+}
+
+.menuDark tbody tr:hover{
+	background: rgba(0,0,0,.1) !important;
+	
+}
+
+
+.deltaDark{
+	background: #363636 !important;
+}
+
+
+.zebraDark{
+	background: #0f0f0f !important;
+}
+
+.formDark{
+	background: #2a2a2a !important;
+}
+/*
+linear-gradient(180deg, #000000 0%, #ffc800 100%)
+*/
+
+
+.darkBody *::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 0px;
+  background-color: #363636;
+}
+
+.darkBody *::-webkit-scrollbar
+{
+  width: 12px;
+ 
+}
+
+.darkBody *::-webkit-scrollbar-thumb
+{
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: linear-gradient(180deg, #000000 0%, #395079 100%);
+}

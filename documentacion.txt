@@ -1,0 +1,2 @@
+1) lo primero que se necesita, es saber cuanto tiene y que valor posee, eso se hace con la tabla prducto
+2) necesita un modulo de ventas, para poder descontar los elementos del stock y mostrar las ganancias

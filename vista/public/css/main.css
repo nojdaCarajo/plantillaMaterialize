@@ -1,0 +1,349 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.oculto{
+  display: none;
+}
+
+/*Alfa es el contenedor principal de todo el documento*/
+#alfa{
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   /*background-color: #000; */
+}
+/*Bravo es el contenedor de la barra prinipal que tendra las principales opciones de usuario*/
+#bravo{
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #004a99;
+
+}
+
+.bradbury{
+  padding: 1%;
+  margin:1%;
+  border-radius: 5px;
+  background-color: #d1d1d1 /*#f1f1f1  #d1d1d1 #e1e1e1 #c1c1c1 #b1b1b1 #a1a1a1 #101010 #a2a2a2;*/;
+  width: 98%;
+}
+
+.bradbury ol li{
+  display: inline-block;
+}
+
+/*Charlie contendra las opciones del menu*/
+#charlie{
+ top: 10%;
+ width: 20%;
+ height: 85%;
+ background-color: #002347;
+ overflow: auto;
+}
+/*Delta cargara la informacion del contenido*/
+#delta{
+  top: 10%;
+  right: 0;
+  width: 80%;
+  height: 85%;
+  background-color: white;
+  overflow: auto;
+}
+/*Echo cargara el pie de pagina*/
+#zebra{
+  bottom: 0%;
+  width: 100%;
+  height: 5%;
+  background-color: #123b63;
+
+}
+/*Top es el Boton que desencadena la accion de conlapsar o expader el menu*/
+#top{
+  height: 50%;
+  top: 25%;
+  margin-left: 0.5%;
+}
+/*Power es el boton destinado para cerrar sesion*/
+#power{
+
+  background: none;
+    border:none;
+      height: 100%;
+      box-shadow: none;
+        font-size: 20pt;
+}
+
+#info{
+  padding: 0;
+ height: 100%;
+ width: 20%;
+ top: 0%;
+ right: 2%;
+}
+
+.active{
+  display: block;
+}
+
+#info-cont{
+  position: absolute;
+  float: left;
+ z-index: 8;
+  top: 55%;
+  height: 350%;
+  width: 15%;
+ right: 5%;
+  background-color: transparent;
+  color: #fff;
+}
+#cosito{
+   z-index: 11;
+  width: 0;
+     height: 0;
+     border-right: 10px solid transparent;
+     border-top: 10px solid transparent;
+     border-left: 10px solid transparent;
+     border-bottom: 10px solid #fff;
+margin-left: 80%;
+}
+
+
+#noti{
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+ box-shadow: 3px 3px 3px 1px rgba(110, 30, 30, 0.2);
+}
+#noti-cont{
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+#alfa, #bravo, #charlie, #delta, #zebra, #top,#power,#info,#noti{
+ position: absolute;
+ float: left;
+}
+
+
+
+  #alfa.contraido > #delta {
+   margin-left: 0;
+   width: 100%;
+ }
+
+ #alfa.contraido > #charlie {
+   margin-left: 0;
+   width: 0%;
+ }
+
+
+ #alfa > #delta, #alfa > #charlie {
+  float: left;
+  -webkit-transition: all 0.34s cubic-bezier(1, 0.335, 0.89, 0.825);
+  transition: all 0.34s cubic-bezier(1, 0.335, 0.89, 0.825);
+}
+
+ #top{
+    background: none;
+    border:none;
+      height: 100%;
+      box-shadow: none;
+       top: 0;
+        font-size: 20pt;
+   }
+    #top  i{
+    
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    transition: .5s;
+   }
+      #top:hover i{
+    background: rgba(0,0,0,.5);
+    border-radius: 50px;
+  }
+ 
+   .btn-infoca{
+     height: 100%;
+    background: none !important;
+    border:none !important;
+box-shadow: none !important;
+        text-align: center;
+
+            /*background: rgba(0,0,0,.5);*/
+   }
+
+.btn-infoca i{
+
+    padding: 5px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    transition: .5s;
+     /*background: rgba(0,0,0,.5);*/
+   }
+      .btn-infoca:hover i{
+    background: rgba(0,0,0,.5);
+  }
+#ricotera{
+/*margin:10px;*/
+}
+
+.opciones{
+border-radius: 50px;
+width: 50px;
+height: 50px;
+/*transition: .5s*/
+}
+
+.opciones:hover{
+
+border:.5px solid rgba(0,0,0,0.1);
+}
+
+  .opciones i{
+    margin: 25% 0%;
+    transition: 0.3s
+}
+
+.opciones:hover i{
+  color: #33d6ff;
+
+}
+/*color de la barra de scroll*/
+body *::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+body *::-webkit-scrollbar
+{
+  width: 12px;
+ 
+}
+
+body *::-webkit-scrollbar-thumb
+{
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: linear-gradient(0deg, #191093 0%, #018979 100%);
+}
+
+.cerrarForm{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.cerrarForm i{
+  margin: 25% 0%;
+}
+.cerrarForm:hover{
+background: rgba(0,0,0,.1);
+}
+
+.lista tbody tr:hover{
+  background: #f5f5f5 ;
+  
+}
+
+
+
+#infoTool .toolMenu, #infoToolLite .toolMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 99999;
+    width: 150px;
+
+}
+
+
+
+
+#infoToolLite .toolMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    z-index: 99999;
+
+
+}
+
+
+
+
+#infoTool .toolMenu li, #infoToolLite .toolMenu  li{
+  
+    margin:10%;
+    padding: 0;
+    display: block;
+}
+.toolCard{
+  overflow: hidden;
+  height: 45vh;
+}
+.toolContTitle{
+  background: #008bc7;
+  margin: 0;
+}
+.toolCont{
+  overflow: auto;
+  height: 40vh;
+}
+
+#infoTool .toolMenu:after{
+    content: '';
+    position: absolute;
+    left: 33px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #008bc7;
+}
+
+#infoToolLite .toolMenu:after{
+    content: '';
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid red;
+}
+
+.toolCont li{
+  position: relative;
+  list-style: none;
+    background: #ededed;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    left: 0; 
+}
+
+.toolMenu li:hover{
+    background: #dedede; 
+}
+
